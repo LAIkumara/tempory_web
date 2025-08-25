@@ -1,13 +1,59 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaTiktok, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import { FaX } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 
 export default function ComingSoon() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  // Array of background images - you can replace these with your actual image paths
+  const backgroundImages = [
+    '/bg1.webp',
+    '/bg2.webp',
+    '/bg3.webp',
+    '/bg4.webp'
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        (prevIndex + 1) % backgroundImages.length
+      );
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
+
   return (
     <div className="relative overflow-hidden min-h-screen flex items-center justify-center bg-gradient-to-br bg-[#5C0099] px-4">
-      {/* Background image */}
-      <div className="absolute inset-0 bg-[url('/bg2.jpg')] bg-cover bg-center opacity-20"></div>
+      {/* Image Slider Background */}
+      <div className="absolute inset-0 bg-cover bg-center z-0">
+        {backgroundImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1100 ${
+              index === currentImageIndex ? 'opacity-30' : 'opacity-0'
+            }`}
+            style={{ backgroundImage: `url('${image}')` }}
+          />
+        ))}
+      </div>
+
+      {/* Slider indicators */}
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+        {backgroundImages.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentImageIndex(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === currentImageIndex 
+                ? 'bg-[#FFD500] scale-110' 
+                : 'bg-white/40 hover:bg-white/60'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
       
       {/* Animated circles */}
       <div className="absolute inset-0">
