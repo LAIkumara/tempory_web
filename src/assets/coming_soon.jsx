@@ -99,7 +99,7 @@ export default function ComingSoon() {
             href="https://www.tiktok.com/@autosell.lk?_t=ZS-8ymKYNU0sFR&_r=1" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors duration-300 p-2"
+            className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
             aria-label="TikTok"
           >
             <FaTiktok size={20} className="md:w-6 md:h-6" />
@@ -108,7 +108,7 @@ export default function ComingSoon() {
             href="https://x.com/autoselllk?s=21" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors duration-300 p-2"
+            className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
             aria-label="X (Twitter)"
           >
             <FaX size={20} className="md:w-6 md:h-6" />
@@ -117,7 +117,7 @@ export default function ComingSoon() {
             href="https://www.facebook.com/share/1AyNe2Z4ej/?mibextid=wwXIfr" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors duration-300 p-2"
+            className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
             aria-label="Facebook"
           >
             <FaFacebook size={20} className="md:w-6 md:h-6"/>
@@ -126,7 +126,7 @@ export default function ComingSoon() {
             href="https://wa.me/94781739510?text=Hello%20AutoSell,%20I'm%20interested%20in%20your%20services" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors duration-300 p-2"
+            className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
             aria-label="WhatsApp"
           >
             <FaWhatsapp size={22} className="md:w-6 md:h-6"/>
@@ -137,10 +137,10 @@ export default function ComingSoon() {
         <div className="flex flex-col items-center gap-2 w-full mt-4 md:mt-6">
           <a 
             href="mailto:autosell.lk@gmail.com" 
-            className="text-sm md:text-base text-gray-400 hover:text-[#FFD500] transition-colors duration-300 flex items-center"
+            className="text-sm md:text-base text-gray-200 hover:text-[#FFD500] transition-colors duration-300 flex items-center"
           >
             <MdOutlineEmail className="mr-2" size={18} />
-            autosell.lk@gmail.com
+            info@autosell.lk
           </a>
         </div>
       </div>
