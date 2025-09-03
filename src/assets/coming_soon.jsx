@@ -8,10 +8,10 @@ export default function ComingSoon() {
   
   // Array of background images - you can replace these with your actual image paths
   const backgroundImages = [
-    '/bg1.webp',
-    '/bg2.webp',
-    '/bg3.webp',
-    '/bg4.webp'
+    '/bg1.png',
+    '/bg2.jpg',
+    '/bg3.jpg',
+    '/bg4.jpg'
   ];
 
   useEffect(() => {
