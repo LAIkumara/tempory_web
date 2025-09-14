@@ -91,45 +91,51 @@ export default function ComingSoon() {
           <span className="block mt-2">Stay tuned for something amazing!</span>
         </p>
 
-        {/* Social Links */}
-        <div className="flex space-x-4 md:space-x-5 mt-6 md:mt-8">
-          <a
-            href="https://www.tiktok.com/@autosell.lk?_t=ZS-8ymKYNU0sFR&_r=1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
-            aria-label="TikTok"
-          >
-            <FaTiktok size={20} className="md:w-6 md:h-6" />
-          </a>
-          <a
-            href="https://x.com/autoselllk?s=21"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
-            aria-label="X (Twitter)"
-          >
-            <FaX size={20} className="md:w-6 md:h-6" />
-          </a>
-          <a
-            href="https://www.facebook.com/share/1AyNe2Z4ej/?mibextid=wwXIfr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
-            aria-label="Facebook"
-          >
-            <FaFacebook size={20} className="md:w-6 md:h-6" />
-          </a>
-          <a
-            href="https://wa.me/94781739510?text=Hello%20AutoSell,%20I'm%20interested%20in%20your%20services"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
-            aria-label="WhatsApp"
-          >
-            <FaWhatsapp size={22} className="md:w-6 md:h-6" />
-          </a>
+        <div className="flex flex-col items-center">
+          <p className="text-base md:text-xl text-[#FFD500] text-center leading-relaxed">
+            Please join us on social media
+          </p>
+          {/* Social Links */}
+          <div className="flex space-x-4 md:space-x-5 ">
+            <a
+              href="https://www.tiktok.com/@autosell.lk?_t=ZS-8ymKYNU0sFR&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
+              aria-label="TikTok"
+            >
+              <FaTiktok size={20} className="md:w-6 md:h-6" />
+            </a>
+            <a
+              href="https://x.com/autoselllk?s=21"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
+              aria-label="X (Twitter)"
+            >
+              <FaX size={20} className="md:w-6 md:h-6" />
+            </a>
+            <a
+              href="https://www.facebook.com/share/1AyNe2Z4ej/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
+              aria-label="Facebook"
+            >
+              <FaFacebook size={20} className="md:w-6 md:h-6" />
+            </a>
+            <a
+              href="https://wa.me/94781739510?text=Hello%20AutoSell,%20I'm%20interested%20in%20your%20services"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#FFD500] transition-colors duration-300 p-2"
+              aria-label="WhatsApp"
+            >
+              <FaWhatsapp size={22} className="md:w-6 md:h-6" />
+            </a>
+          </div>
         </div>
+        
 
         {/* Email address */}
         <div className="flex flex-col items-center gap-2 w-full mt-4 md:mt-6">
