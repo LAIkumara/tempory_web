@@ -93,7 +93,7 @@ export default function ComingSoon() {
 
         <div className="flex flex-col items-center">
           <p className="text-base md:text-xl text-[#FFD500] text-center leading-relaxed">
-            Please join us on social media
+            Join us on social media
           </p>
           {/* Social Links */}
           <div className="flex space-x-4 md:space-x-5 ">
